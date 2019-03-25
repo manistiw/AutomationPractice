@@ -106,10 +106,16 @@ public class BasePage {
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(id));
 
     }
-    @Step("waiting for url to appear.")
+    @Step("waiting for url to be equal to given url: {0}.")
     public void waitForUrl(String url) {
         WebDriverWait wait = new WebDriverWait(BrowserProvider.getDriver(),15);
         ExpectedCondition<Boolean> urlIsCorrect = arg0 ->BrowserProvider.getDriver().getCurrentUrl().equals(url);
+        wait.until(urlIsCorrect);
+    }
+    @Step("waiting for url to ends with text: {0}.")
+    public void waitForUrlContains(String text) {
+        WebDriverWait wait = new WebDriverWait(BrowserProvider.getDriver(),15);
+        ExpectedCondition<Boolean> urlIsCorrect = arg0 ->BrowserProvider.getDriver().getCurrentUrl().contains(text);
         wait.until(urlIsCorrect);
     }
 

@@ -19,7 +19,7 @@ public class LoggedInHomePage {
 
     @Step("Verify Home Page url")
     public boolean VerifyMyHomePage(){
-        basePage.waitForUrl(url);
+        basePage.waitForUrlContains(url);
         return true;
     }
 
