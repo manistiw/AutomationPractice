@@ -33,7 +33,7 @@ public class WebDriverListner implements IInvokedMethodListener {
                     e.printStackTrace();
                 }
                 TestListner.saveScreenshotPNG(driver);
-                driver.quit();
+                driver.close();
             }
         }
     }
