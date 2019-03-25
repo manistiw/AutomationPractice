@@ -1,9 +1,5 @@
 # AutomationPractice
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 This project is about a small framework for running ui and api test in parallel and sequential with allure reporting.You can refer it for
 
   - parallel execution using WebDriver
@@ -24,7 +20,7 @@ $ scoop install allure
 
 | Report Plugin | README |
 | ------ | ------ |
-| Allure | [https://github.com/allure-framework/allure2/blob/master/README.md][PlDb] |
+| Allure | [https://github.com/allure-framework/allure2/blob/master/README.md]|
 
 installation documentation: https://docs.qameta.io/allure/#_installing_a_commandline
 
