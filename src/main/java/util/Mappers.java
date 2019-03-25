@@ -23,7 +23,7 @@ public class Mappers {
     private static Map<String, Object> data = new HashMap<String, Object>();
     private static final Logger log = LoggerFactory.getLogger(Mappers.class);
     static {
-        URL dirURL = Mappers.class.getResource("/mockData");
+        URL dirURL = Mappers.class.getResource("/testData");
         File[] files = null;
         if(dirURL != null && dirURL.getProtocol().equals("file")) {
             try {
@@ -69,6 +69,19 @@ public class Mappers {
             log.error("", e);
         }
         return null;
+    }
+    public static JSONObject getJSONObject(Object objDto) {
+        String json = null;
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+            Map<String, Object> objectMap = objectMapper.convertValue(objDto, Map.class);
+            return new JSONObject(objectMap);
+        } catch (JSONException e) {
+            log.info(json);
+            log.error(e.getMessage(), e);
+            return null;
+        }
     }
     public static String getRandomAlphaNumericString(){
         return RandomStringUtils.random(32, true, true);

@@ -1,0 +1,16 @@
+{
+  "employeeData":{
+    "id": "66800",
+    "employee_name": "test_gk_unique1",
+    "employee_salary": "123",
+    "employee_age": "23",
+    "profile_image": ""
+  },
+  "employeeCreateData":{
+    "id":null,
+    "name": "test_gk_unique760%s",
+    "salary": "123",
+    "age": "23",
+    "profile_image":null
+  }
+}

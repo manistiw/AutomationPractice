@@ -14,7 +14,7 @@ import javax.annotation.PostConstruct;
 @PropertySources({
         @PropertySource(value = "classpath:${environment:stage}.properties")}//this will get precedence.
 )
-@ComponentScan(basePackages = {"uicomponent","pages"})
+@ComponentScan(basePackages = {"uicomponent","apicomponent","pages"})
 public class ApplicationConfigContext {
     private final Logger log = LoggerFactory.getLogger(ApplicationConfigContext.class);
 
