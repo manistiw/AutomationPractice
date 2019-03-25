@@ -1,0 +1,40 @@
+{
+ "userData":{
+  "Title":"Mrs.",
+  "firstName": "Alex",
+  "lastName": "InWunderland",
+  "email":"%s@gmail.com",
+  "password":"M@nish2012",
+  "dateOfBirth":"13",
+  "monthOfBirth":"9",
+  "yearOfBirth":"1987",
+  "company":"SampleCompany",
+  "addressLine1":"Dusseldorf street 56",
+  "addressLine2":"Inglostad",
+  "city":"Dusseldorf",
+  "state":"Ohio",
+  "zipCode":"12345",
+  "country":"United States",
+  "phone":"+4980808080800",
+  "addressAlias":"personal"
+ },
+ "registeredUserData":{
+  "Title":"Mrs.",
+  "firstName": "alex",
+  "lastName": "inwunderland",
+  "email":"P72Xp2utVk8T3VI3ZCrads1Bknz8quGH@rakuten.com",
+  "password":"M@nish2012",
+  "dateOfBirth":"13",
+  "monthOfBirth":"9",
+  "yearOfBirth":"1987",
+  "company":"SampleCompany",
+  "addressLine1":"Dusseldorf street 56",
+  "addressLine2":"Inglostad",
+  "city":"Dusseldorf",
+  "state":"Ohio",
+  "zipCode":"12345",
+  "country":"United States",
+  "phone":"+4980808080800",
+  "addressAlias":"personal"
+ }
+}

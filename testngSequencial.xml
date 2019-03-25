@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test runner" parallel="methods" thread-count="1" verbose="1">
+
+	<listeners>
+		<listener class-name="Listners.WebDriverListner"></listener>
+		<listener class-name="Listners.TestListner"></listener>
+	</listeners>
+	<test name="test">
+		<parameter name="url" value="http://automationpractice.com/index.php"/>
+		<!--supporting browser firefox,chrome,chrome_headless,ie-->
+		<parameter name="browser" value="chrome"/>
+		<parameter name="timeout" value="10"/>
+		<classes>
+			<class name="ui.UserTests"></class>
+		</classes>
+	</test>
+</suite>
