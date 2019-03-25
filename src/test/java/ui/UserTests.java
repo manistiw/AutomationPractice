@@ -1,6 +1,6 @@
 package ui;
 
-import Listners.TestListner;
+import listners.TestListner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;

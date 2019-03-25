@@ -3,8 +3,8 @@
 <suite name="Test runner" parallel="methods" thread-count="3" verbose="1">
 
 	<listeners>
-		<listener class-name="Listners.WebDriverListner"></listener>
-		<listener class-name="Listners.TestListner"></listener>
+		<listener class-name="listners.WebDriverListner"></listener>
+		<listener class-name="listners.TestListner"></listener>
 	</listeners>
 	<test name="test">
 		<parameter name="url" value="http://automationpractice.com/index.php"/>
