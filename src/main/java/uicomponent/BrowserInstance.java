@@ -24,10 +24,10 @@ public class BrowserInstance {
         switch(browser.toLowerCase())
         {
             case "chrome_headless":
-                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--disable-gpu");
+                WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver(chromeOptions);
                 driver.manage().timeouts().implicitlyWait(implicitlytimeoutinmillisec, TimeUnit.SECONDS);
                 driver.get(baseUrl);
