@@ -41,7 +41,7 @@ $ mvn clean test -DsuiteXmlFile=testngSequencial.xml
 > running api tests
 
 ```sh
-$ mvn clean test -DsuiteXmlFile=testngSequencial.xml
+$ mvn clean test -DsuiteXmlFile=testngApi.xml
 ```
 ### Report Generation
 
