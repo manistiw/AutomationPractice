@@ -14,9 +14,15 @@ This project is about a small framework for running ui and api test in parallel 
 ### Report Generation
 
 Before execution its a good idea to install allure report for viewing reports in browser.
+open powerShell if windows user and execute this 
+```sh
+$iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+```
 ```sh
 $ scoop install allure
 ```
+And then move to target folder of cloned project and run allure serve
+report will get open in browser
 
 | Report Plugin | README |
 | ------ | ------ |
